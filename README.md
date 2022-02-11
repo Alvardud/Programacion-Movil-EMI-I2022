@@ -10,10 +10,10 @@ En esta sección veremos una introducción breve del lenguaje de programación d
 
 * Básico, nociones básicas del lenguaje
     * [Inicial]()
-    * [Variables]()
-    * [Operadores]()
-    * [Funciones]()
-    * [Sentencias de control]()
+    * [Variables](https://github.com/Alvardud/Programacion-Movil-EMI-I2022/blob/main/dart/variables.dart)
+    * [Operadores](https://github.com/Alvardud/Programacion-Movil-EMI-I2022/blob/main/dart/operadores.dart)
+    * [Funciones](https://github.com/Alvardud/Programacion-Movil-EMI-I2022/blob/main/dart/funciones.dart)
+    * [Sentencias de control](https://github.com/Alvardud/Programacion-Movil-EMI-I2022/blob/main/dart/sentencias_control.dart)
 * Específico, pequeña profundización de conceptos
     * [Colecciones]()
     * [Excepciones]()
