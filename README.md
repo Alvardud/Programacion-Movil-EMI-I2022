@@ -4,6 +4,20 @@ Curso de programacion movil de la carrera de informatica, Escuela Militar de Ing
 
 En este repositorio se encontrara toda la informacion respecto a la materia de programacion movil de 5to semestre.
 
+## GIT
+
+* **Repositorio**, es un proyecto ya sea en internet o en maquina local
+* **Commit**, es una agrupacion de modificaciones realizadas en un codigo
+
+Comandos basicos de git
+
+```
+git clone
+
+git add
+
+```
+
 ## Dart ejemplos
 
 En esta sección veremos una introducción breve del lenguaje de programación dart
