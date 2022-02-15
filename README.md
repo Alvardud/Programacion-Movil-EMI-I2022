@@ -14,7 +14,13 @@ Comandos basicos de git
 ```
 git clone
 
-git add
+git add .
+
+git commit -m "nombre del commit"
+
+git push origin main
+
+git pull
 
 ```
 
