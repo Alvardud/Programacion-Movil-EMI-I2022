@@ -27,6 +27,7 @@ git pull
 ## Dart ejemplos
 
 En esta sección veremos una introducción breve del lenguaje de programación dart
+En esta seccion se aprendera diferentes paradigmas de programacion
 
 * Básico, nociones básicas del lenguaje
     * [Inicial]()
