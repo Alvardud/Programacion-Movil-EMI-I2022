@@ -8,7 +8,7 @@ void main() {
   //Valores nulos
   // En dart no existen los valores nulos (null) por defecto
   String? ciudad;
-  
+
   //Validacion de un valor nulo
   print(ciudad??"Valor por defecto");
   

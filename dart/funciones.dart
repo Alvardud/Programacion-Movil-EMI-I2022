@@ -20,5 +20,4 @@ void main() {
     =>(variable1-variable2);
   
   print(restaSimplificada(20,50));
-  
 }
