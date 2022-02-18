@@ -36,9 +36,9 @@ En esta seccion se aprendera diferentes paradigmas de programacion
     * [Funciones](https://github.com/Alvardud/Programacion-Movil-EMI-I2022/blob/main/dart/funciones.dart)
     * [Sentencias de control](https://github.com/Alvardud/Programacion-Movil-EMI-I2022/blob/main/dart/sentencias_control.dart)
 * Específico, pequeña profundización de conceptos
-    * [Colecciones]()
-    * [Excepciones]()
-    * [Funciones de alto orden]()
+    * [Colecciones](https://github.com/Alvardud/Programacion-Movil-EMI-I2022/blob/main/dart/colecciones.dart)
+    * [Excepciones](https://github.com/Alvardud/Programacion-Movil-EMI-I2022/blob/main/dart/excepciones.dart)
+    * [Funciones de alto orden](https://github.com/Alvardud/Programacion-Movil-EMI-I2022/blob/main/dart/funciones_alto_orden.dart)
 * POO (recomendado profundizar por cuenta propia)
     * [General Objetos]()
 
