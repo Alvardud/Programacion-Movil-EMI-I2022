@@ -40,6 +40,6 @@ En esta seccion se aprendera diferentes paradigmas de programacion
     * [Excepciones](https://github.com/Alvardud/Programacion-Movil-EMI-I2022/blob/main/dart/excepciones.dart)
     * [Funciones de alto orden](https://github.com/Alvardud/Programacion-Movil-EMI-I2022/blob/main/dart/funciones_alto_orden.dart)
 * POO (recomendado profundizar por cuenta propia)
-    * [General Objetos]()
+    * [General Objetos](https://github.com/Alvardud/Programacion-Movil-EMI-I2022/tree/main/dart/poo)
 
 ## Introduccion a Flutter
