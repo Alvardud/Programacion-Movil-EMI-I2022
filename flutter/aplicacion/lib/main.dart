@@ -16,11 +16,13 @@ class MyApp2 extends StatefulWidget {
 class _MyApp2State extends State<MyApp2> {
   String? titulo;
   Color? fondo;
+  String? nombre;
 
   @override
   void initState() {
     titulo = "Mi boton";
     fondo = Colors.blue;
+    nombre = "";
     super.initState();
   }
 
@@ -28,20 +30,30 @@ class _MyApp2State extends State<MyApp2> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        
       appBar: AppBar(
         title: Text("Titulo"),
       ),
       body: Center(
-          child: ElevatedButton(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          Text("Mi nombre es \n$nombre"),
+          RaisedButton(
         child: Text(titulo!),
         onPressed: () {
           setState(() {
+            nombre = "Alvaro";
             titulo = "Boton presionado";
           });
         },
-      )),
+      )
+        ]
+      )
+      )
     )
   
     );
     }
 }
+
