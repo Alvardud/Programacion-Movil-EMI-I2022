@@ -3,53 +3,45 @@ import 'package:flutter/material.dart';
 const Color darkBlue = Color.fromARGB(255, 18, 32, 47);
 
 void main() {
-  runApp(MyApp());
+  runApp(MyApp2());
 }
 
-class MyApp extends StatelessWidget {
-  
-  String titulo = "Titulo de la aplicacion";
-  
+class MyApp2 extends StatefulWidget {
+  const MyApp2({Key? key}) : super(key: key);
+
+  @override
+  _MyApp2State createState() => _MyApp2State();
+}
+
+class _MyApp2State extends State<MyApp2> {
+  String? titulo;
+  Color? fondo;
+
+  @override
+  void initState() {
+    titulo = "Mi boton";
+    fondo = Colors.blue;
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
-    
     return MaterialApp(
-      theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: darkBlue,
-      ),
-      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        floatingActionButton: FloatingActionButton(
-          child: Icon(Icons.home),
-          onPressed: (){
-            titulo = "Nuevo titulo de aplicacion";
-          }
-        ),
-        appBar: AppBar(
-          title: Text(titulo)
-        ),
-        /*body: Stack(
-          children: [
-            Align(child:Container(height:150,width:150,color: Colors.red),alignment:Alignment.center),
-            Positioned(top:100,right:0,left:200,
-              child:Container(height:150,width:100, color: Colors.blue)),
-            Positioned(
-              bottom: -90,
-              child:Container(height:100, width:120,color: Colors.green)),
-          ]
-        )*/
-        body: ListView(
-          scrollDirection: Axis.horizontal,
-          children:[
-            Container(height:150,width:120,color: Colors.red),
-            Container(height:100,width:150,color: Colors.blue),
-            Container(height:120,width:250,color: Colors.green),
-            Container(height:150,width:150,color: Colors.yellow),
-            Container(height:150,width:150,color: Colors.purple),
-            Container(height:150,width:150,color: Colors.pink)
-          ]
-        )
+      appBar: AppBar(
+        title: Text("Titulo"),
       ),
+      body: Center(
+          child: ElevatedButton(
+        child: Text(titulo!),
+        onPressed: () {
+          setState(() {
+            titulo = "Boton presionado";
+          });
+        },
+      )),
+    )
+  
     );
-  }
+    }
 }
