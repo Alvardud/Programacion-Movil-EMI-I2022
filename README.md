@@ -48,3 +48,4 @@ En esta seccion se aprendera diferentes paradigmas de programacion
     * [Inicial]()
     * [Stateless](https://github.com/Alvardud/Programacion-Movil-EMI-I2022/blob/main/flutter/aplicacion/lib/main.dart)
     * [Stateful](https://github.com/Alvardud/Programacion-Movil-EMI-I2022/blob/main/flutter/aplicacion/lib/main.dart)
+        * [Ejercicio](https://github.com/Alvardud/Programacion-Movil-EMI-I2022/blob/main/flutter/aplicacion/lib/main.dart)
