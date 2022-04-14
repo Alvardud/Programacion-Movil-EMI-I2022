@@ -7,6 +7,7 @@ void main() {
 }
 
 class MyApp2 extends StatefulWidget {
+  static const ruta = 'primera_pantalla';  
   const MyApp2({Key? key}) : super(key: key);
 
   @override
@@ -16,44 +17,61 @@ class MyApp2 extends StatefulWidget {
 class _MyApp2State extends State<MyApp2> {
   String? titulo;
   Color? fondo;
-  String? nombre;
 
   @override
   void initState() {
     titulo = "Mi boton";
     fondo = Colors.blue;
-    nombre = "";
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        
-      appBar: AppBar(
-        title: Text("Titulo"),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          Text("Mi nombre es \n$nombre"),
-          RaisedButton(
-        child: Text(titulo!),
-        onPressed: () {
-          setState(() {
-            nombre = "Alvaro";
-            titulo = "Boton presionado";
-          });
-        },
-      )
-        ]
-      )
-      )
-    )
-  
+      routes: {
+        SegundaPantalla.ruta: (context)=>SegundaPantalla()
+      },
+      home: PrimeraPantalla()
     );
     }
 }
 
+class PrimeraPantalla extends StatelessWidget {
+  const PrimeraPantalla({ Key? key }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Primera pantalla"),
+      ),
+      body: Center(
+          child: RaisedButton(
+        child: Text("boton"),
+        onPressed: () {
+          Navigator.pushNamed(context,SegundaPantalla.ruta);
+        },
+      )),
+    );
+  }
+}
+
+class SegundaPantalla extends StatefulWidget {
+  static const ruta = 'segunda_pantalla';
+  const SegundaPantalla({Key? key}) : super(key: key);
+
+  @override
+  _SegundaPantallaState createState() => _SegundaPantallaState();
+}
+
+class _SegundaPantallaState extends State<SegundaPantalla> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Segunda pantalla"),
+      ),
+      body: Container(),
+    );
+    }
+}
